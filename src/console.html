@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html x-ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+
+<title>NodeJS-log</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="socket.io/socket.io.js"></script>
+<script src="script-min.js"></script>
+</head>
+<body>
+<div x-ng-controller="consoleAppController">
+
+<div class="log" ng-style="getColor(l)" x-ng-repeat="l in log">{{l}}</div>
+
+</div>
+
+
+</body>
+</html>
